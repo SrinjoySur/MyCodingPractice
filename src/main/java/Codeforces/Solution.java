@@ -59,8 +59,9 @@ public class Solution {
         StringBuilder res = new StringBuilder();
         while (T-- > 0) {
             StringBuilder temp = new StringBuilder();
-            int l1 = s.nextInt(), b1 = s.nextInt(), l2 = s.nextInt(), b2 = s.nextInt(), l3= s.nextInt(), b3= s.nextInt();
-            res.append(SquareOfRectangles.solution(l1,b1,l2,b2,l3,b3)).append("\n");
+            int a = s.nextInt(), b = s.nextInt(), c = s.nextInt(), d = s.nextInt();
+            res.append(b).append(" ").append(c).append(" ").append(c).append("\n");
+
         }
         System.out.println(res);
     }

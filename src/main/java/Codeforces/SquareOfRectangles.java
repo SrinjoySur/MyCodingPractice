@@ -7,7 +7,9 @@ import java.util.StringTokenizer;
 
 public class SquareOfRectangles {
     public static String solution(int l1,int b1,int l2, int b2,int l3,int b3){
-        int s =(int) Math.sqrt((l1*b1)+(l2*b2)+(l3*b3));
+        int area=(l1*b1)+(l2*b2)+(l3*b3);
+        int s =(int) Math.sqrt(area);
+        if(area!=s*s) return "No";
         boolean flag=(b1==b2)&&(b2==b3)&&(b3==s)&&(l1+l2+l3== s);
         if(flag){
             return "Yes";
@@ -16,34 +18,15 @@ public class SquareOfRectangles {
             if(flag){
                 return "Yes";
             } else{
-                if(b1==s){
-                    flag=(b2+b3==b1)&&((l1==l2) ||(l2==l3) ||(l3==l1) )&&(l1==b1-l3 || l2==b1-l1 || l3==b1-l2);
-                    if(flag){
+                if(b1==s) {
+                    flag = (b2 + b3 == b1);
+                    if (flag) {
                         return "Yes";
                     }
-                } else if (b2==s) {
-                    flag=(b1+b3==b2)&&((l1==l2) ||(l2==l3) ||(l3==l1) )&&(l1==b2-l3 || l2==b2-l1 || l3==b2-l2);
-                    if(flag){
-                        return "Yes";
-                    }
-                } else if (b3==s) {
-                    flag=(b2+b1==b3)&&((l1==l2) ||(l2==l3) ||(l3==l1) )&&(l1==b3-l3 || l2==b3-l1 || l3==b3-l2);
-                    if(flag){
-                        return "Yes";
-                    }
-                } else if (l1==s) {
-                    flag=(l2+l3==l1)&&((b1==b2) ||(b2==b3) ||(b3==b1) )&&(b1==l1-b3 || b2==l1-b1 || b3==l1-b2);
-                    if(flag){
-                        return "Yes";
-                    }
-                } else if (l2==s) {
-                    flag=(l1+l3==l2)&&((b1==b2) ||(b2==b3) ||(b3==b1) )&&(b1==l2-b3 || b2==l2-b1 || b3==l2-b2);
-                    if(flag){
-                        return "Yes";
-                    }
-                } else if (l3==s) {
-                    flag=(l2+l1==l3)&&((b1==b2) ||(b2==b3) ||(b3==b1) )&&(b1==l3-b3 || b2==l3-b1 || b3==l3-b2);
-                    if(flag){
+                }
+                else if (l1==s) {
+                    flag = (l2 + l3 == l1);
+                    if (flag) {
                         return "Yes";
                     }
                 }
