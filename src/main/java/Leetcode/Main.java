@@ -12,9 +12,8 @@ public class Main{
 //            FindTheMinimumAreaToCoverAllOnes sol=new FindTheMinimumAreaToCoverAllOnes();
 //            System.out.println(sol.minimumArea(new int[][]{{0,1,0},{1,0,1}}));
 //            System.out.println(sol.minimumArea(new int[][]{{1,0},{0,0}}));
-        LongestSubarrayOfOnesAfterDeletingOneElement sol=new LongestSubarrayOfOnesAfterDeletingOneElement();
-        System.out.println(sol.longestSubarray(new int[]{1,1,0,1}));
-        System.out.println(sol.longestSubarray(new int[]{0,1,1,1,0,1,1,0,1}));
-        System.out.println(sol.longestSubarray(new int[]{1,1,1}));
+        MaximumAreaOfLongestDiagonalRectangle sol=new MaximumAreaOfLongestDiagonalRectangle();
+        System.out.println(sol.areaOfMaxDiagonal(new int[][]{{9,3},{8,6}}));
+        System.out.println(sol.areaOfMaxDiagonal(new int[][]{{3,4},{4,3}}));
     }
 }
