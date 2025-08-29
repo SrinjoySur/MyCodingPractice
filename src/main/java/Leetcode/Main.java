@@ -17,8 +17,11 @@ public class Main{
 //        MaximumAreaOfLongestDiagonalRectangle sol=new MaximumAreaOfLongestDiagonalRectangle();
 //        System.out.println(sol.areaOfMaxDiagonal(new int[][]{{9,3},{8,6}}));
 //        System.out.println(sol.areaOfMaxDiagonal(new int[][]{{3,4},{4,3}}));
-        SortMatrixByDiagonals sol=new SortMatrixByDiagonals();
-        System.out.println(Arrays.deepToString(sol.sortMatrix(new int[][]{{1, 7, 3}, {9, 8, 2}, {4, 5, 6}})));
-        System.out.println(Arrays.deepToString(sol.sortMatrix(new int[][]{{0,1},{1,2}})));
+//        SortMatrixByDiagonals sol=new SortMatrixByDiagonals();
+//        System.out.println(Arrays.deepToString(sol.sortMatrix(new int[][]{{1, 7, 3}, {9, 8, 2}, {4, 5, 6}})));
+//        System.out.println(Arrays.deepToString(sol.sortMatrix(new int[][]{{0,1},{1,2}})));
+        AliceAndBobPlayingFlowerGame sol=new AliceAndBobPlayingFlowerGame();
+        System.out.println(sol.flowerGame(3,2));
+        System.out.println(sol.flowerGame(1,1));
     }
 }
