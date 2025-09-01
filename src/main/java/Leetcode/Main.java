@@ -20,8 +20,11 @@ public class Main{
 //        SortMatrixByDiagonals sol=new SortMatrixByDiagonals();
 //        System.out.println(Arrays.deepToString(sol.sortMatrix(new int[][]{{1, 7, 3}, {9, 8, 2}, {4, 5, 6}})));
 //        System.out.println(Arrays.deepToString(sol.sortMatrix(new int[][]{{0,1},{1,2}})));
-        AliceAndBobPlayingFlowerGame sol=new AliceAndBobPlayingFlowerGame();
-        System.out.println(sol.flowerGame(3,2));
-        System.out.println(sol.flowerGame(1,1));
+//        AliceAndBobPlayingFlowerGame sol=new AliceAndBobPlayingFlowerGame();
+//        System.out.println(sol.flowerGame(3,2));
+//        System.out.println(sol.flowerGame(1,1));
+        MaximumAveragePassRatio sol=new MaximumAveragePassRatio();
+        System.out.println(sol.maxAverageRatio(new int[][]{{1,2},{3,5},{2,2}},2));
+        System.out.println(sol.maxAverageRatio(new int[][]{{2,4},{3,9},{4,5},{2,10}},4));
     }
 }
