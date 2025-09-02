@@ -23,8 +23,12 @@ public class Main{
 //        AliceAndBobPlayingFlowerGame sol=new AliceAndBobPlayingFlowerGame();
 //        System.out.println(sol.flowerGame(3,2));
 //        System.out.println(sol.flowerGame(1,1));
-        MaximumAveragePassRatio sol=new MaximumAveragePassRatio();
-        System.out.println(sol.maxAverageRatio(new int[][]{{1,2},{3,5},{2,2}},2));
-        System.out.println(sol.maxAverageRatio(new int[][]{{2,4},{3,9},{4,5},{2,10}},4));
+//        MaximumAveragePassRatio sol=new MaximumAveragePassRatio();
+//        System.out.println(sol.maxAverageRatio(new int[][]{{1,2},{3,5},{2,2}},2));
+//        System.out.println(sol.maxAverageRatio(new int[][]{{2,4},{3,9},{4,5},{2,10}},4));
+        FindTheNumberOfWaysToPlacePeopleI sol=new FindTheNumberOfWaysToPlacePeopleI();
+        System.out.println(sol.numberOfPairs(new int[][]{{1,1},{2,2},{3,3}}));
+        System.out.println(sol.numberOfPairs(new int[][]{{6,2},{4,4},{2,6}}));
+        System.out.println(sol.numberOfPairs(new int[][]{{3,1},{1,3},{1,1}}));
     }
 }
