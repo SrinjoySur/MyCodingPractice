@@ -30,9 +30,12 @@ public class Main{
 //        System.out.println(sol.numberOfPairs(new int[][]{{1,1},{2,2},{3,3}}));
 //        System.out.println(sol.numberOfPairs(new int[][]{{6,2},{4,4},{2,6}}));
 //        System.out.println(sol.numberOfPairs(new int[][]{{3,1},{1,3},{1,1}}));
-        FindClosestPerson sol=new FindClosestPerson();
-        System.out.println(sol.findClosest(2,7,4));
-        System.out.println(sol.findClosest(2,5,6));
-        System.out.println(sol.findClosest(1,5,3));
+//        FindClosestPerson sol=new FindClosestPerson();
+//        System.out.println(sol.findClosest(2,7,4));
+//        System.out.println(sol.findClosest(2,5,6));
+//        System.out.println(sol.findClosest(1,5,3));
+        MinimumOperationsToMakeTheIntegerZero sol=new MinimumOperationsToMakeTheIntegerZero();
+        System.out.println(sol.makeTheIntegerZero(3,-2));
+        System.out.println(sol.makeTheIntegerZero(5,7));
     }
 }
