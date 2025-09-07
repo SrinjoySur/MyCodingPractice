@@ -34,8 +34,12 @@ public class Main{
 //        System.out.println(sol.findClosest(2,7,4));
 //        System.out.println(sol.findClosest(2,5,6));
 //        System.out.println(sol.findClosest(1,5,3));
-        MinimumOperationsToMakeTheIntegerZero sol=new MinimumOperationsToMakeTheIntegerZero();
-        System.out.println(sol.makeTheIntegerZero(3,-2));
-        System.out.println(sol.makeTheIntegerZero(5,7));
+//        MinimumOperationsToMakeTheIntegerZero sol=new MinimumOperationsToMakeTheIntegerZero();
+//        System.out.println(sol.makeTheIntegerZero(3,-2));
+//        System.out.println(sol.makeTheIntegerZero(5,7));
+        FindNUniqueIntegersSumUpToZero sol=new FindNUniqueIntegersSumUpToZero();
+        System.out.println(Arrays.toString(sol.sumZero(5)));
+        System.out.println(Arrays.toString(sol.sumZero(3)));
+        System.out.println(Arrays.toString(sol.sumZero(1)));
     }
 }
