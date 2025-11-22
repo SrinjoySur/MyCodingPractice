@@ -1,4 +1,4 @@
-package Leetcode;
+package LeetcodeDaily;
 
 public class FindMinimumOperationsToMakeAllElementsDivisibleByThree {
     public int minimumOperations(int[] nums) {
