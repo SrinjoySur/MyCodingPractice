@@ -1,5 +1,8 @@
 package LeetcodeDaily;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class MakeSumDivisibleByP {
     public int minSubarray(int[] nums, int p) {
         long total = 0;
