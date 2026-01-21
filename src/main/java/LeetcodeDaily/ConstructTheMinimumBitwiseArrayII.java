@@ -1,5 +1,5 @@
 package LeetcodeDaily;
-
+import java.util.List;
 public class ConstructTheMinimumBitwiseArrayII {
     public int[] minBitwiseArray(List<Integer> nums) {
         int ans[] = new int[nums.size()];
