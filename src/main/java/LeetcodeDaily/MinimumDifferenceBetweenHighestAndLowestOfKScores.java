@@ -13,4 +13,4 @@ public class MinimumDifferenceBetweenHighestAndLowestOfKScores {
         return ans;
     }
 }
-}
+
