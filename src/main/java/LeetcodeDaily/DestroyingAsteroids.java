@@ -1,0 +1,21 @@
+package LeetcodeDaily;
+
+import java.util.Arrays;
+
+public class DestroyingAsteroids {
+    public boolean asteroidsDestroyed(int mass, int[] asteroids) {
+        Arrays.sort(asteroids);
+
+        long currentMass = mass;
+
+        for (int asteroid : asteroids) {
+            if (currentMass < asteroid) {
+                return false;
+            }
+
+            currentMass += asteroid;
+        }
+
+        return true;
+    }
+}
