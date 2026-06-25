@@ -1,26 +1,23 @@
 package LeetcodeDaily;
 
 public class CountSubarraysWithMajorityElementI {
-    public long countMajoritySubarrays(int[] nums, int target) {
+    public int countMajoritySubarrays(int[] nums, int target) {
         int n = nums.length;
         long ans = 0;
 
-        for (int l = 0; l < n; l++) {
-            int targetCount = 0;
+        for (int i = 0; i < n; i++) {
+            int cnt = 0;
 
-            for (int r = l; r < n; r++) {
-                if (nums[r] == target) {
-                    targetCount++;
-                }
+            for (int j = i; j < n; j++) {
+                if (nums[j] == target) cnt++;
 
-                int len = r - l + 1;
+                int len = j - i + 1;
 
-                if (targetCount > len / 2) {
+                if (2 * cnt > len)
                     ans++;
-                }
             }
         }
 
-        return ans;
+        return (int)ans;
     }
 }
