@@ -3,24 +3,27 @@ package LeetcodeDaily;
 public class CountSubarraysWithMajorityElementII {
     public long countMajoritySubarrays(int[] nums, int target) {
         int n = nums.length;
-        long cnt = 0;
+        int pref = n;
 
-        for (int i = 0; i < n; i++) {
-            int freq = 0;
+        int[] freq = new int[2 * n + 1];
+        freq[n] = 1;
 
-            for (int j = i; j < n; j++) {
-                if (nums[j] == target) {
-                    freq++;
-                }
+        long less = 0;
+        long ans = 0;
 
-                int len = j - i + 1;
-
-                if (freq > len / 2) {
-                    cnt++;
-                }
+        for (int num : nums) {
+            if (num == target) {
+                less += freq[pref];
+                pref++;
+            } else {
+                pref--;
+                less -= freq[pref];
             }
+
+            freq[pref]++;
+            ans += less;
         }
 
-        return cnt;
+        return ans;
     }
 }
