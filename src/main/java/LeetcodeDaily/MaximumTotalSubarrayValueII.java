@@ -4,7 +4,7 @@ import java.util.PriorityQueue;
 public class MaximumTotalSubarrayValueII {
     public long maxTotalValue(int[] nums, int k) {
         int n = nums.length;
-        SparseTable LUT = new SparseTable(nums);
+        SparseTable1 LUT = new SparseTable1(nums);
 
         PriorityQueue<int[]> pq = new PriorityQueue<>((num, b) -> b[0] - num[0]);
         for (int i = 0; i < n; i++)
